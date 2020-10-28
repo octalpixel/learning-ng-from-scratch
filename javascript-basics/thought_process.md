@@ -6,7 +6,7 @@ Start with mock UI and build late on
 Use variables => store as an array of the todo
 
 3. What structure of the storing data ?  What are the fields
-name, isCompleted,isDeleted, created_at
+task, isCompleted,isDeleted, created_at
 
 
 

@@ -39,7 +39,7 @@ function loadList() {
         const listItem = `
         <div class="todo-item">
                 <div class="todo-title">
-                    ${todo.name}
+                    ${todo.task}
                 </div>
                 <div class="todo-action">
                     <button>Mark Complete</button>
@@ -63,8 +63,8 @@ function addTodoItem() {
     const createdAt = (new Date()).toJSON()
 
     const todoItem = {
-        name: todoTitle,
-        createdAt,
+        task: todoTitle,
+        createdAt:createdAt,
         isCompleted: false,
         isDeleted: false
     }
@@ -73,7 +73,7 @@ function addTodoItem() {
 
     saveTodo(todoItem)
     
-    // loadList()
+    loadList()
 
     // console.log(todoItem)
 }
