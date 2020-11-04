@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { IPost } from 'src/app/modules/blog/core/types/post.types';
 
 @Component({
   selector: 'app-post-preview',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostPreviewComponent implements OnInit {
 
+  @Input() postItem:IPost;
   constructor() { }
 
   ngOnInit() {

@@ -9,11 +9,13 @@ import { BlogRoutingModule } from './blog-routing.module';
 import { SinglePostPageComponent } from './pages/single-post-page/single-post-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { PostPreviewComponent } from './pages/home-page/components/post-preview/post-preview.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
     CommonModule,
-    BlogRoutingModule
+    BlogRoutingModule,
+    HttpClientModule
   ],
   declarations: [
     BlogComponent,

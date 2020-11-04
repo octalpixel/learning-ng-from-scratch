@@ -4,13 +4,15 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-8 col-md-10 mx-auto">
-      <app-post-preview></app-post-preview>
-      <app-post-preview></app-post-preview>
-      <app-post-preview></app-post-preview>
-      <app-post-preview></app-post-preview>
-      <app-post-preview></app-post-preview>
-      <app-post-preview></app-post-preview>
-      <app-post-preview></app-post-preview>
+      <ng-container *ngIf="isPostLoaded">
+        <app-post-preview [postItem]="post" *ngFor="let post of postList;let i=index">
+          {{post}}
+        </app-post-preview>
+      </ng-container>
+
+      <ng-container *ngIf="!isPostLoaded">
+        <h1>Loading.....</h1>
+      </ng-container>
     </div>
   </div>
 </div>
