@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "players",
+  "info": {
+    "name": "Player"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "rank": {
+      "type": "string"
+    },
+    "age": {
+      "type": "integer"
+    }
+  }
+}
